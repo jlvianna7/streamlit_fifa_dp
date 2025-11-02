@@ -24,11 +24,15 @@ if "dados" not in st.session_state:
 st.markdown('# FIFA 2023 OFFICIAL DATASET! :soccer:')
 st.sidebar.markdown(":soccer: Desenvolvido por [Joao](https://www.google.com)")
 
-btn = st.button("Acesse os dados no Keggle :soccer:")
-if btn:
-    webbrowser.open_new_tab(
-        "https://www.kaggle.com/datasets/bryanb/fifa-player-stats-database")
 
+btn = st.link_button(
+    "Acesse os dados no Keggle",
+    "https://www.kaggle.com/datasets/bryanb/fifa-player-stats-database"
+)
+# if btn:
+#    webbrowser.open_new_tab(
+#        "https://www.kaggle.com/datasets/bryanb/fifa-player-stats-database")
+#
 st.markdown(
     """
 **Conjunto de dados**
